@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}Resources - SaarthiAI{% endblock %}
+
+{% block content %}
+<main class="p-8">
+    <div class="mb-8">
+        <h2 class="text-3xl font-bold">Resources</h2>
+        <p class="text-gray-400">Articles, guides, and tools to help you succeed.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-gray-800 border border-gray-700 rounded-lg overflow-hidden">
+            <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">Guide to Effective Time Management</h3>
+                <p class="text-gray-400 mb-4">Learn strategies to balance your coursework and personal life.</p>
+                <a href="#" class="font-semibold text-blue-400 hover:underline">Read More →</a>
+            </div>
+        </div>
+        <div class="bg-gray-800 border border-gray-700 rounded-lg overflow-hidden">
+            <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">Understanding Predictive Analytics</h3>
+                <p class="text-gray-400 mb-4">A brief introduction to the technology that powers SaarthiAI.</p>
+                <a href="#" class="font-semibold text-blue-400 hover:underline">Read More →</a>
+            </div>
+        </div>
+        <div class="bg-gray-800 border border-gray-700 rounded-lg overflow-hidden">
+            <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">Mental Health and Wellness Tips</h3>
+                <p class="text-gray-400 mb-4">Tips for staying mentally healthy during your studies.</p>
+                <a href="#" class="font-semibold text-blue-400 hover:underline">Read More →</a>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}

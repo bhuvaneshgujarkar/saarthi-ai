@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaarthiAI - Empowering Student Success</title>
+    <link href="{{ url_for('static', filename='dist/output.css') }}" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <div class="container mx-auto px-6">
+        <header class="flex justify-between items-center py-6">
+            <h1 class="text-2xl font-bold">SaarthiAI</h1>
+            <nav class="flex items-center space-x-6">
+                <a href="/" class="text-blue-400 font-semibold">Home</a>
+                <a href="#" class="hover:text-blue-400">About</a>
+                <a href="/dashboard" class="bg-blue-600 hover:bg-blue-700 px-5 py-2 rounded-lg font-semibold">Go to App</a>
+            </nav>
+        </header>
+
+        <main class="text-center py-20 md:py-32">
+            <h2 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Empowering Student Success Through AI</h2>
+            <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-8">
+                SaarthiAI is a predictive analytics platform that helps educational institutions identify at-risk students and provide timely counseling to prevent dropouts.
+            </p>
+            <a href="/dashboard" class="bg-blue-600 hover:bg-blue-700 text-lg font-bold py-4 px-8 rounded-lg">Get Started</a>
+        </main>
+    </div>
+</body>
+</html>

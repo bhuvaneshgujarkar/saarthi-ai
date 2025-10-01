@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - SaarthiAI</title>
+    <link href="{{ url_for('static', filename='dist/output.css') }}" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <div class="container mx-auto px-4">
+        <header class="flex justify-between items-center py-6">
+            <h1 class="text-2xl font-bold">SaarthiAI</h1>
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="#" class="hover:text-blue-400">Home</a>
+                <a href="#" class="hover:text-blue-400">About</a>
+                <a href="#" class="hover:text-blue-400">Contact</a>
+                <button class="bg-blue-600 hover:bg-blue-700 px-5 py-2 rounded-lg font-semibold">Sign Up</button>
+            </nav>
+        </header>
+
+        <main class="flex flex-col md:flex-row items-center justify-center md:justify-around text-center md:text-left py-16">
+            
+            <div class="w-full max-w-md mb-12 md:mb-0">
+                <h2 class="text-4xl font-bold mb-6 text-center">Welcome to SaarthiAI</h2>
+
+                <div class="flex bg-gray-800 rounded-lg p-1 mb-6">
+                    <button class="flex-1 py-2 text-gray-400 rounded-md">Mentor/Counselor</button>
+                    <button class="flex-1 py-2 bg-gray-700 rounded-md font-semibold">Student/Guardian</button>
+                </div>
+
+                <form action="/home" method="GET" class="space-y-5">
+                    <input type="email" placeholder="Email" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <input type="password" placeholder="Password" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <div class="text-left text-sm">
+                        <a href="#" class="text-blue-400 hover:underline">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 font-bold py-3 rounded-lg">Login</button>
+                    <p class="text-sm text-center text-gray-400">Don't have an account? <a href="#" class="text-blue-400 hover:underline">Sign up</a></p>
+                </form>
+            </div>
+
+            <div class="w-full max-w-md flex justify-center">
+                <div class="relative w-80 h-80">
+                    <div class="absolute inset-0 bg-gradient-to-br from-green-400 to-green-600 rounded-full opacity-60 transform -rotate-45"></div>
+                    <svg viewBox="0 0 200 200" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 text-blue-400">
+                        <path fill="currentColor" d="M126.3,49.2c-6.2-7.3-15.1-11.8-24.9-12.1c-10-0.3-19.6,3.5-26.6,10.6c-13,13-15.1,33.4-5,49.2c2,3.1,4.4,5.9,7.2,8.4l-11,10.9c-2.4-2.8-4.5-5.9-6.3-9.3c-13.8-26.4,2.3-58.4,28.7-72.2c16.9-8.9,36.8-9,53.8-0.2c26.4,13.8,40.5,45.8,26.7,72.2c-1.8,3.4-4,6.5-6.3,9.3l-11-10.9c2.8-2.5,5.2-5.3,7.2-8.4C141.4,82.6,139.3,62.2,126.3,49.2z"/>
+                        <text x="50%" y="45%" dominant-baseline="middle" text-anchor="middle" font-size="24" font-weight="bold" fill="white">AI</text>
+                    </svg>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

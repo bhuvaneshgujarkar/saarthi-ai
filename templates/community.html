@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}Community - SaarthiAI{% endblock %}
+
+{% block content %}
+<main class="p-8">
+    <div class="flex justify-between items-center mb-8">
+        <div>
+            <h2 class="text-3xl font-bold">Community Forum</h2>
+            <p class="text-gray-400">Connect with peers and counselors.</p>
+        </div>
+        <button class="bg-blue-600 hover:bg-blue-700 px-5 py-2 rounded-lg font-semibold">
+            + New Post
+        </button>
+    </div>
+
+    <div class="bg-gray-800 border border-gray-700 rounded-lg">
+        <div class="flex items-center justify-between p-4 border-b border-gray-700">
+            <div>
+                <a href="#" class="text-lg font-bold hover:text-blue-400">Struggling with Advanced Calculus</a>
+                <p class="text-sm text-gray-400">Posted by Alex Doe • 2 hours ago</p>
+            </div>
+            <div class="text-right">
+                <p class="font-semibold">5 Replies</p>
+                <p class="text-sm text-gray-400">Last reply by Jane Smith</p>
+            </div>
+        </div>
+        <div class="flex items-center justify-between p-4 border-b border-gray-700">
+            <div>
+                <a href="#" class="text-lg font-bold hover:text-blue-400">Tips for the upcoming Physics exam?</a>
+                <p class="text-sm text-gray-400">Posted by John Appleseed • 1 day ago</p>
+            </div>
+            <div class="text-right">
+                <p class="font-semibold">12 Replies</p>
+                <p class="text-sm text-gray-400">Last reply by Mentor Dave</p>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
