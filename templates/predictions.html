@@ -39,31 +39,61 @@
     <div class="mb-8">
         <h3 class="text-xl font-bold mb-4">Statistical Analysis</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
             <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
                 <h4 class="font-semibold mb-4">Risk Level Distribution</h4>
-                <div class="flex items-end justify-around h-40 space-x-4">
-                    <div class="flex flex-col items-center">
-                        <div class="w-16 bg-green-500 rounded-t" style="height: {{ low_risk_percentage }}%;"></div>
+                <div class="flex items-end justify-around h-48 space-x-4">
+                    <div class="flex flex-col items-center w-16 text-center">
+                        <span class="font-bold text-lg mb-1">{{ low_risk_percentage }}%</span>
+                        <div class="w-full bg-green-500 rounded-t" style="height: {{ low_risk_percentage }}%;"></div>
                         <span class="text-sm text-gray-400 mt-2">Low</span>
                     </div>
-                    <div class="flex flex-col items-center">
-                        <div class="w-16 bg-yellow-500 rounded-t" style="height: {{ medium_risk_percentage }}%;"></div>
+                    <div class="flex flex-col items-center w-16 text-center">
+                        <span class="font-bold text-lg mb-1">{{ medium_risk_percentage }}%</span>
+                        <div class="w-full bg-yellow-500 rounded-t" style="height: {{ medium_risk_percentage }}%;"></div>
                          <span class="text-sm text-gray-400 mt-2">Medium</span>
                     </div>
-                    <div class="flex flex-col items-center">
-                        <div class="w-16 bg-red-500 rounded-t" style="height: {{ high_risk_percentage }}%;"></div>
+                    <div class="flex flex-col items-center w-16 text-center">
+                        <span class="font-bold text-lg mb-1">{{ high_risk_percentage }}%</span>
+                        <div class="w-full bg-red-500 rounded-t" style="height: {{ high_risk_percentage }}%;"></div>
                          <span class="text-sm text-gray-400 mt-2">High</span>
                     </div>
                 </div>
             </div>
+
             <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
                  <h4 class="font-semibold mb-4">Key Factors Influencing Risk</h4>
-                 <div class="space-y-3">
-                    <div class="w-full"><div class="bg-blue-500 text-xs text-white text-right p-1 rounded" style="width: 85%;">Academic Performance</div></div>
-                    <div class="w-full"><div class="bg-blue-500 text-xs text-white text-right p-1 rounded" style="width: 60%;">Attendance</div></div>
-                    <div class="w-full"><div class="bg-blue-500 text-xs text-white text-right p-1 rounded" style="width: 45%;">Engagement</div></div>
-                    <div class="w-full"><div class="bg-blue-500 text-xs text-white text-right p-1 rounded" style="width: 30%;">Financial Status</div></div>
-                    <div class="w-full"><div class="bg-blue-500 text-xs text-white text-right p-1 rounded" style="width: 20%;">Social Integration</div></div>
+                 <div class="space-y-4 text-sm">
+                    <div>
+                        <p class="mb-1 text-gray-400">Academic Performance</p>
+                        <div class="w-full bg-gray-700 rounded-full h-4">
+                            <div class="bg-blue-500 h-4 rounded-full" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="mb-1 text-gray-400">Attendance</p>
+                        <div class="w-full bg-gray-700 rounded-full h-4">
+                            <div class="bg-blue-500 h-4 rounded-full" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="mb-1 text-gray-400">Engagement</p>
+                        <div class="w-full bg-gray-700 rounded-full h-4">
+                            <div class="bg-blue-500 h-4 rounded-full" style="width: 45%;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="mb-1 text-gray-400">Financial Status</p>
+                        <div class="w-full bg-gray-700 rounded-full h-4">
+                            <div class="bg-blue-500 h-4 rounded-full" style="width: 30%;"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="mb-1 text-gray-400">Social Integration</p>
+                        <div class="w-full bg-gray-700 rounded-full h-4">
+                            <div class="bg-blue-500 h-4 rounded-full" style="width: 20%;"></div>
+                        </div>
+                    </div>
                  </div>
             </div>
         </div>
